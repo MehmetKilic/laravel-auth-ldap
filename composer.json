@@ -1,0 +1,16 @@
+{
+    "name": "mehmetkilic/laravel-auth-ldap",
+    "type": "laravel",
+    "require-dev": {
+        "#": "n"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehmet Kılıç",
+            "email": "mail@mehmetkilic.com.tr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
