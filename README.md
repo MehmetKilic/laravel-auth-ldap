@@ -21,9 +21,25 @@ $ composer update
 ## Usage
 
 ```php
-$connect = new MehmetKilic\LdapAuth\LdapAuth;
-$status  = $example->connectLDAP('server_url');
-// > return LDAP user detail 
+use MehmetKilic\LdapAuth\LdapAuth as LdapAuth;
+
+$connect = LdapAuth::getConnect("server_url", "server_api_key", "email_or_username", "password");
+if( $connect->status == 200 ){
+  // if the login is successful
+  return "Success";
+}
+else{
+  return "Error";
+}
+ 
+```
+
+## Methods
+
+```php
+getConnect
+ldapConnect
+convertUser
 ```
 
 ## Licence
