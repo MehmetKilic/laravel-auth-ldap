@@ -50,7 +50,8 @@ Fonksiyon 4 adet parametre alır,
 3 - Kullanıcı LDAP kullanıcı adı
 4 - Kullanıcı LDAP şifresi
 
-Gönderimi sağlanan 4 parametre doğrultusunda LDAP bağlantısını sağlamak adına format düzenlenir ve bilgiler ldapConnect metoduna gönderilir.
+Gönderimi sağlanan 4 parametre doğrultusunda LDAP bağlantısını sağlamak 
+adına format düzenlenir ve bilgiler ldapConnect metoduna gönderilir.
 ```
 
 ## ldapConnect ( Türkçe )
@@ -62,9 +63,13 @@ Fonksiyon 5 adet parametre alır,
 4 - Kullanıcı LDAP kullanıcı adı
 5 - Kullanıcı LDAP şifresi
 
-Tüm bu bilgileri bizim tekrardan girmemize gerek yok, getConnect metodu bizim yerimize bu bilgileri ilgili formata zaten soktu ve isteği yerimize gerçekleştirdi.
-Aslında sistemin en önemli noktası da bu metod. Çünkü LDAP sunucusuna istek bu metod üzerinden yapılıyor, eğer bilgilerimiz doğru ise sistem kullanıcı bilgilerini döndürecektir.
-Bilgiler yanlış ise "false" dönecektir değerimiz.
+Tüm bu bilgileri bizim tekrardan girmemize gerek yok, getConnect 
+metodu bizim yerimize bu bilgileri ilgili formata zaten 
+soktu ve isteği yerimize gerçekleştirdi. Aslında sistemin en önemli 
+noktası da bu metod. Çünkü LDAP sunucusuna istek bu metod 
+üzerinden yapılıyor, eğer bilgilerimiz doğru ise sistem 
+kullanıcı bilgilerini döndürecektir.Bilgiler yanlış ise "false" 
+dönecektir değerimiz.
 ```
 
 ## convertUser ( Türkçe )
@@ -74,11 +79,18 @@ Fonksiyon 3 adet parametre alır,
 2 - Kullanıcı LDAP kullanıcı adı
 3 - Kullanıcı LDAP şifresi
 
-Kullanıcı girişi gerçekleşmişse bu fonksiyonumuz en son çalışır ve Ldap sunucusu tarafından gönderilen kullanıcı bilgilerini Laravelde rahat kullanmamız için uyarlar.
-Bir diğer görevi ise Laravel kendi authentication yönetimine sahip bir sistemdir, ve bu sistem dışarıdan login işlemlerini desteklemez driver geliştirilmediği sürece.
-Bu noktada eğer kullanıcı başarılı bir oturum açma işlemi gerçekleştirmişse onu kendi veritabanımızda kayıt edip ondan sonra o kullanıcıya oturum açıyoruz.
+Kullanıcı girişi gerçekleşmişse bu fonksiyonumuz en son çalışır ve 
+Ldap sunucusu tarafından gönderilen kullanıcı bilgilerini Laravelde 
+rahat kullanmamız için uyarlar.Bir diğer görevi ise Laravel kendi 
+authentication yönetimine sahip bir sistemdir, ve bu sistem dışarıdan 
+login işlemlerini desteklemez driver geliştirilmediği sürece.
+Bu noktada eğer kullanıcı başarılı bir oturum açma işlemi 
+gerçekleştirmişse onu kendi veritabanımızda kayıt edip ondan 
+sonra o kullanıcıya oturum açıyoruz.
 
-Bu noktada bu kullanıcıya bağımlı işlemlerin nasıl yönetileceği noktasında ise LDAP tarafında kullanıcının standart bir employeeID değeri mevcut database üzerinde ki işlemleri bu 
+Bu noktada bu kullanıcıya bağımlı işlemlerin nasıl yönetileceği 
+noktasında ise LDAP tarafında kullanıcının standart bir 
+employeeID değeri mevcut database üzerinde ki işlemleri bu 
 benzersiz id ye göre yapmak mantıklı olacaktır.
 ```
 ## Licence
