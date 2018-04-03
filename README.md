@@ -42,6 +42,9 @@ ldapConnect
 convertUser
 ```
 
+## Support
+Laravel 5.*
+
 ## getConnect ( Türkçe )
 ```
 Fonksiyon 4 adet parametre alır, 
