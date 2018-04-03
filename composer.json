@@ -1,16 +1,21 @@
 {
-    "name": "mehmetkilic/laravel-auth-ldap",
-    "type": "laravel",
-    "require-dev": {
-        "#": "n"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mehmet Kılıç",
-            "email": "mail@mehmetkilic.com.tr"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+  "name": "mehmetkilic/laravel-auth-ldap",
+  "type": "laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mehmet Kılıç",
+      "email": "mail@mehmetkilic.com.tr"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "require-dev": {
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MehmetKilic\\LdapAuth\\": "src/MehmetKilic/LdapAuth"
+    }
+  }
 }
